@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff; /* Default light mode background */
+  --foreground: #171717; /* Default light mode foreground */
+  --font-comic-sans: 'Comic Sans', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Dark mode background */
+    --foreground: #ededed; /* Dark mode foreground */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-comic-sans);
+}

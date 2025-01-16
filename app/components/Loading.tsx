@@ -1,0 +1,9 @@
+const Loading = () => {
+    return (
+        <div className="fixed inset-0 flex flex-col space-y-3 items-center justify-center z-10 bg-yellow-100">
+            <svg viewBox="0 0 400 400" className="w-48 h-48 animate-bounce" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M117.762 93.5452C177.416 7.2401 286.219 146.205 209.763 203.086C150.352 247.291 80.6021 178.391 108.495 118.441" stroke="#000000" strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M88 321.134C133.281 320.049 143.28 234.293 193.563 243.336C205.066 245.405 226.354 258.484 257.428 282.574C280.54 221.917 294.439 187.164 299.126 178.314" stroke="#000000" strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M176.828 250.418C172.914 276.105 172.098 314.839 169.104 335" stroke="#000000" strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M275.954 176.928C288.293 174.815 299.957 171.054 312 168.608" stroke="#000000" strokeOpacity="0.9" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round"></path> <path opacity="0.503384" d="M311.262 172.768C299.91 187.356 315.455 311.32 311.262 314.353C309.543 315.597 286.14 312.922 257.287 312.922C235.322 312.922 214.817 318.919 206.528 312.922C205.561 312.223 206.528 301.77 206.528 300.05C206.528 270.933 206.34 240.71 202.575 212.098" stroke="#000000" strokeOpacity="0.9" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round"></path> <path opacity="0.503384" d="M236.046 120.922C259.303 120.238 282.269 120.922 305.563 120.922" stroke="#000000" strokeOpacity="0.9" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
+        </div>
+    )
+}
+
+export default Loading
