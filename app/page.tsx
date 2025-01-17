@@ -250,7 +250,7 @@ export default function Home() {
               notificationDetails: { url, token },
               title: `New Scratch Art by @${username}`,
               body: "One Awesome Scratch of Art has been minted on the @base Network.",
-              targetUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/${Number(tokenId)}`,
+              targetUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/${Number(tokenId) + 1}`,
             }),
           });
         } catch (error) {
