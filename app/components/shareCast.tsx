@@ -17,7 +17,7 @@ const ShareCastButton = ({ castMentions, tokenId }: ShareCastProps) => {
 
         try {
             
-            const castText = "Just in: One Masterpieces of Scratches has been minted on the network by ";
+            const castText = "Just in: One Masterpieces of Scratches has been minted on the  network by ";
             const siteUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${tokenId}`;
 
             const message = { castText, siteUrl, castMentions };

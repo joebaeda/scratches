@@ -384,7 +384,7 @@ export default function Home() {
             >
               Proof
             </button>
-            <ShareCastButton castMentions={fid} tokenId={Number(tokenId)} />
+            <ShareCastButton castMentions={fid} tokenId={Number(tokenId) + 1} />
           </div>
         ) : (
           <div className="flex p-2 mt-4 md:p-0 flex-col md:flex-row gap-2 justify-center items-center">

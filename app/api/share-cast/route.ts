@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
             embeds: [{ url: siteUrl }],
             embedsDeprecated: [],
             mentions: [12142, castMentions],
-            mentionsPositions: [62, 73],
+            mentionsPositions: [62, 74],
             type: CastType.CAST,
         };
 
