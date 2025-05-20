@@ -12,7 +12,7 @@ export async function GET() {
             iconUrl: "https://scratches.vercel.app/scratch.png",
             homeUrl: "https://scratches.vercel.app",
             imageUrl: "https://scratches.vercel.app/og-image.jpg",
-            buttonTitle: "Let's Scratching!",
+            buttonTitle: "let's scratching!",
             splashImageUrl: "https://scratches.vercel.app/splash.svg",
             splashBackgroundColor: "#ede4ca",
             webhookUrl: "https://scratches.vercel.app/api/webhook"
