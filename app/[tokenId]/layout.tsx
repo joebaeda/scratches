@@ -24,13 +24,13 @@ export async function generateMetadata({
         const ogImageUrl = `${baseUrl}/api/og-image?tokenId=${tokenId}`;
 
         return {
-            title: "Scratches 🖌 Scratch of Art",
+            title: "scratches 🖌",
             description:
-                "Create and Mint your own original scratch art that can boggle mind and imagination",
+                "create and mint your own original scratch art that can boggle mind and imagination",
             openGraph: {
-                title: `Scratches 🖌 Scratch of Art Token #${tokenId}`,
+                title: `scratches 🖌 #${tokenId}`,
                 description:
-                    "Create and Mint your own original scratch art that can boggle mind and imagination",
+                    "create and mint your own original scratch art that can boggle mind and imagination",
                 url: `${baseUrl}/${tokenId}`,
                 type: "website",
                 images: [
@@ -38,15 +38,15 @@ export async function generateMetadata({
                         url: ogImageUrl, // Use the dynamically generated og-image URL
                         width: 1200,
                         height: 600,
-                        alt: `Scratch of Art for Token #${tokenId}`,
+                        alt: `scratch of art for token #${tokenId}`,
                     },
                 ],
             },
             twitter: {
                 card: "summary_large_image",
-                title: `Scratches 🖌 Scratch of Art Token #${tokenId}`,
+                title: `scratches 🖌 #${tokenId}`,
                 description:
-                    "Create and Mint your own original scratch art that can boggle mind and imagination",
+                    "create and mint your own original scratch art that can boggle mind and imagination",
                 images: [ogImageUrl], // Use the dynamically generated og-image URL
             },
             icons: {
@@ -57,10 +57,10 @@ export async function generateMetadata({
                     version: "next",
                     imageUrl: ogImageUrl, // Use the dynamically generated og-image URL
                     button: {
-                        title: "Make Offer",
+                        title: "make offer",
                         action: {
                             type: "launch_frame",
-                            name: "Scratches 🖌 Scratch of Art",
+                            name: "scratches 🖌",
                             url: `${baseUrl}/${tokenId}`,
                             splashImageUrl:
                                 `${baseUrl}/splash.svg`,
@@ -73,8 +73,8 @@ export async function generateMetadata({
     } catch (error) {
         console.error('Error generating metadata:', error);
         return {
-            title: 'Scratch of Art',
-            description: 'Failed to load token data',
+            title: 'scratches 🖌',
+            description: 'failed to load token data',
         };
     }
 }

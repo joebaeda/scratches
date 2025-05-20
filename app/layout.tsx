@@ -15,10 +15,10 @@ const frame = {
   version: "next",
   imageUrl: `${baseUrl}/og-image.jpg`,
   button: {
-    title: "Let's Scratching!",
+    title: "let's scratching!",
     action: {
       type: "launch_frame",
-      name: "Scratches 🖌 Scratch of Art",
+      name: "scratches 🖌",
       url: baseUrl,
       splashImageUrl: `${baseUrl}/splash.svg`,
       splashBackgroundColor: "#ede4ca",
@@ -30,11 +30,11 @@ export const revalidate = 300;
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Scratches 🖌 Scratch of Art",
-    description: "Create and Mint your own original scratch art that can boggle mind and imagination",
+    title: "scratches 🖌",
+    description: "create and mint your own original scratch art that can boggle mind and imagination",
     openGraph: {
-      title: "Scratches 🖌 Scratch of Art",
-      description: "Create and Mint your own original scratch art that can boggle mind and imagination",
+      title: "scratches 🖌",
+      description: "create and mint your own original scratch art that can boggle mind and imagination",
       url: baseUrl,
       type: 'website',
       images: [
@@ -42,14 +42,14 @@ export async function generateMetadata(): Promise<Metadata> {
           url: `${baseUrl}/og-image.jpg`,
           width: 1200,
           height: 600,
-          alt: 'Mint your Scratch',
+          alt: 'mint your scratch',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: "Scratches 🖌 Scratch of Art",
-      description: "Create and Mint your own original scratch art that can boggle mind and imagination",
+      title: "scratches 🖌",
+      description: "create and mint your own original scratch art that can boggle mind and imagination",
       images: [`${baseUrl}/og-image.jpg`],
     },
     icons: {

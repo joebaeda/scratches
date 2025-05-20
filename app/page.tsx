@@ -248,13 +248,13 @@ export default function Home() {
             body: JSON.stringify({
               fid: 891914,
               notificationDetails: { url, token },
-              title: `New Scratch Art by @${username}`,
-              body: "One Awesome Scratch of Art has been minted on the @base Network.",
+              title: `new scratch art by @${username}`,
+              body: "one awesome scratch of art has been minted on the @base network.",
               targetUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/${Number(tokenId) + 1}`,
             }),
           });
         } catch (error) {
-          console.error("Notification error:", error);
+          console.error("notification error:", error);
         }
       };
       notifyUser();
@@ -287,10 +287,10 @@ export default function Home() {
         if (response.ok) {
           return data.ipfsHash; // Set the IPFS hash on success
         } else {
-          console.log({ message: 'Something went wrong', type: 'error' });
+          console.log({ message: 'something went wrong', type: 'error' });
         }
       } catch (err) {
-        console.log({ message: 'Error uploading file', type: 'error', error: err });
+        console.log({ message: 'error uploading file', type: 'error', error: err });
       }
     }
   }
@@ -382,7 +382,7 @@ export default function Home() {
               className="w-full py-3 rounded-2xl bg-purple-500 text-white text-2xl font-semibold hover:bg-purple-700 transition"
               onClick={() => linkToBaseScan(hash)}
             >
-              Proof
+              proof
             </button>
             <ShareCastButton castMentions={fid} tokenId={Number(tokenId) + 1} />
           </div>
@@ -395,10 +395,10 @@ export default function Home() {
               onClick={handleMint}
             >
               {isPending
-                ? "Confirming..."
+                ? "confirming..."
                 : isConfirming
-                  ? "Waiting..."
-                  : isConfirmed ? "Minted! 🎉" : "Mint"}
+                  ? "waiting..."
+                  : isConfirmed ? "minted! 🎉" : "mint"}
             </button>
           </div>
         )}
@@ -480,7 +480,7 @@ export default function Home() {
               onClick={() => setShowColorPicker(false)}
               className="w-full py-2 rounded-2xl bg-blue-500 text-white text-2xl font-semibold hover:bg-blue-700 transition"
             >
-              Close
+              close
             </button>
           </div>
         </div>
@@ -505,7 +505,7 @@ export default function Home() {
             disabled={isPending}
             className="w-64 py-2 rounded-2xl bg-blue-500 text-white text-2xl font-semibold hover:bg-blue-700 transition"
           >
-            Close
+            close
           </button>
         </div>
       )}
@@ -513,7 +513,7 @@ export default function Home() {
       {/* Transaction Error */}
       {error && (
         <div className="fixed bottom-0 w-full flex justify-between shadow-md">
-          <div className="bg-red-500 p-4 text-center text-white">Error: {(error as BaseError).shortMessage || error.message}</div>
+          <div className="bg-red-500 p-4 text-center text-white">error: {(error as BaseError).shortMessage || error.message}</div>
         </div>
       )}
 

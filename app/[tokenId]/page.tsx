@@ -85,7 +85,7 @@ export default function TokenDetails({
                             src={tokenURIs.startsWith("ipfs://")
                                 ? `https://gateway.pinata.cloud/ipfs/${tokenURIs.slice(7)}`
                                 : tokenURIs}
-                            alt={`Scratch Art ${tokenId}`}
+                            alt={`scratch art #${tokenId}`}
                             width={200}
                             height={200}
                             className="w-full max-h-[392px] p-4 bg-white rounded-2xl mx-auto"
@@ -96,12 +96,12 @@ export default function TokenDetails({
                             className="w-full py-4 bg-[#311535] text-white text-xl rounded-2xl font-semibold hover:bg-[#522358] transition"
                             onClick={() => linkToMarket(tokenId)}
                         >
-                            Make Offer
+                            make offer
                         </button>
                     </>
                 ) : (
                     <div className="fixed inset-0 flex max-w-[300px] mx-auto justify-center items-center text-gray-500 text-center col-span-3">
-                        No Scratch of art minted yet. Add your first one!
+                        no scratch of art minted yet. add your first one!
                     </div>
                 )}
             </div>
