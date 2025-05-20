@@ -388,7 +388,7 @@ export default function Home() {
           </div>
         ) : (
           <div className="flex p-2 mt-4 md:p-0 flex-col md:flex-row gap-2 justify-center items-center">
-            <SendCastButton castText="New Masterpiece of Scratch of Art by " castMentions={fid} getIPFSHash={() => saveDrawing()} />
+            <SendCastButton castText="new masterpiece of scratch of art by " castMentions={fid} getIPFSHash={() => saveDrawing()} />
             <button
               className="w-full py-3 rounded-2xl bg-purple-500 text-white text-2xl font-semibold hover:bg-purple-700 transition"
               disabled={chainId !== base.id || isPending || isConfirmed}

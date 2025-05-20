@@ -38,12 +38,12 @@ const SendCastButton = ({ castText, castMentions, getIPFSHash }: SendCastProps) 
                 setIsSuccess(true)
             } else {
                 setIsSuccess(false)
-                throw new Error("Failed to send cast.")
+                throw new Error("failed to send cast.")
             }
 
             await response.json();
         } catch (error: unknown) {
-            console.error("Error sending cast:", (error as Error).message);
+            console.error("error sending cast:", (error as Error).message);
         } finally {
             setIsSending(false);
         }
@@ -55,7 +55,7 @@ const SendCastButton = ({ castText, castMentions, getIPFSHash }: SendCastProps) 
             onClick={sendCast}
             className="w-full py-3 rounded-2xl bg-blue-500 text-white text-2xl font-semibold hover:bg-blue-700 transition"
         >
-           {isSending ? "Casting..." : isSuccess ? "Casted! 🎉" : "Cast"}
+           {isSending ? "casting..." : isSuccess ? "casted! 🎉" : "cast"}
         </button>
     );
 };
